@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" initialViewController="B8D-0N-5wS">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.AVKitIBPlugin" version="10116"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10116"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="cmtJeopardy" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="cmtJeopardy" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="CREDITOS :)" id="5kV-Vb-QxS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                                <segue destination="xwq-4P-mGj" kind="show" id="fgW-VC-jC4"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                                        <menuItem title="Quit cmtJeopardy" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Instrucciones" id="dMs-cI-mzQ">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Instrucciones" id="bib-Uj-vzu">
+                                    <items>
+                                        <menuItem title="Instrucciones" id="rz3-jI-bkB">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <segue destination="MsZ-ny-yZo" kind="show" id="ovo-7S-fs6"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Help" id="wpr-3q-Mcd">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                    </window>
+                    <connections>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                    </connections>
+                </windowController>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="313"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="V1l-vc-ebA">
+            <objects>
+                <viewController id="tsE-H4-xuB" sceneMemberID="viewController">
+                    <view key="view" id="ihv-3j-KWr">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="qZ1-nx-BrR" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1686" y="-47"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="v1D-z0-v7D">
+            <objects>
+                <viewController id="MsZ-ny-yZo" sceneMemberID="viewController">
+                    <view key="view" id="ZyQ-3z-FHM">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="VVf-VC-Mun">
+                                <rect key="frame" x="-2" y="-6" width="454" height="306"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" id="LzS-oP-WL5">
+                                    <font key="font" metaFont="system"/>
+                                    <string key="title">JEOPARDY 1.0
+
+Instrucciones de operación:
+
+1.- Primero debe conectar el "cerebro" a la computadora, antes de abrir el programa (si el programa fue abierto despues, solo reiniciar)
+
+*No debe de haber otros dispositivos de tipo "puerto" conectados a la computadora, procurar conectar solo el "cerebro"*
+
+Es todo :)
+</string>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="2IC-cn-cD2" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="569" y="-557"/>
+        </scene>
+        <!--Creditos-->
+        <scene sceneID="r0e-6O-mca">
+            <objects>
+                <viewController title="Creditos" id="xwq-4P-mGj" sceneMemberID="viewController">
+                    <view key="view" id="ROr-iP-etZ">
+                        <rect key="frame" x="0.0" y="0.0" width="459" height="382"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" id="xZ4-TJ-wMO">
+                                <rect key="frame" x="-2" y="0.0" width="463" height="382"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" id="34X-oL-E1L">
+                                    <font key="font" metaFont="system" size="17"/>
+                                    <string key="title">JEOPARDY 1.0
+
+Creditos:
+
+Daniel Álvarez Maya
+Arturo Brito Mijares
+Diego Hernandez Cardenas
+Karlo Alejandro López Mayen
+Braulio Martinez Enriquez
+María Palomera Iturburu
+Hector Rodolfo Sanchez Gutierrez
+
+
+Impulsado por: Enriqueta Serrano
+
+Moderno Tepeyac 2016
+
+#todosSomosArea1</string>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="hCw-rk-zfS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="573.5" y="-160"/>
+        </scene>
+        <!--Jeopardy 1.0 by #Area1-->
+        <scene sceneID="hIz-AP-VOD">
+            <objects>
+                <viewController title="Jeopardy 1.0 by #Area1" id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="738" height="471"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <avPlayerView autoresizesSubviews="NO" controlsStyle="none" id="0Ms-ni-N9v">
+                                <rect key="frame" x="0.0" y="0.0" width="738" height="471"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </avPlayerView>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="daK-kt-G03">
+                                <rect key="frame" x="0.0" y="0.0" width="738" height="471"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="quintos" id="zbO-lq-dwA"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundPlayer" destination="0Ms-ni-N9v" id="x1y-e0-HBk"/>
+                        <outlet property="imageView" destination="daK-kt-G03" id="mTL-qy-smi"/>
+                    </connections>
+                </viewController>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="810.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="quintos" width="504" height="360"/>
+    </resources>
+</document>
