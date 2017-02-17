@@ -3,7 +3,7 @@ Mac application + arduino code to build a contest/quiz game buttons, with the ob
 
 - Modified arduino code included.
 
-Based on soundfounder arduino tutorial: [LINK](https://www.sunfounder.com/learn/rfid-kit-v2-0-for-arduino/lesson-7-building-a-quiz-buzzer-system-rfid-v2-0-for-arduino.html)
+Based on sunfounder arduino tutorial: [LINK](https://www.sunfounder.com/learn/rfid-kit-v2-0-for-arduino/lesson-7-building-a-quiz-buzzer-system-rfid-v2-0-for-arduino.html)
 
 
 ##Diagram:
